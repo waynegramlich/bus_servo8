@@ -1,0 +1,339 @@
+Cmp-Mod V01 Created by Cvpcb (2014-jul-16 BZR unknown)-product   date = Sun 25 Jan 2015 02:44:18 PM PST
+
+BeginCmp
+TimeStamp = /543A0162/543A13A9;
+Reference = C1;
+ValeurCmp = 1uF;
+IdModule  = Bus_Servo8:Capacitor3MMDiscRM2.5;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A0162/543A13BE;
+Reference = C4;
+ValeurCmp = 1uF;
+IdModule  = Bus_Servo8:Capacitor3MMDiscRM2.5;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A0162/543A13CC;
+Reference = C5;
+ValeurCmp = 18pF;
+IdModule  = Bus_Servo8:Capacitor4x3RM2-5_RevB;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A0162/543A1499;
+Reference = C6;
+ValeurCmp = .1uF;
+IdModule  = Bus_Servo8:Capacitor4x3RM2-5_RevB;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A0162/543A14A0;
+Reference = C7;
+ValeurCmp = .1uF;
+IdModule  = Bus_Servo8:Capacitor4x3RM2-5_RevB;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A0162/543A14A7;
+Reference = C8;
+ValeurCmp = .1uF;
+IdModule  = Bus_Servo8:Capacitor4x3RM2-5_RevB;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A0162/543A13D3;
+Reference = C9;
+ValeurCmp = 18pF;
+IdModule  = Bus_Servo8:Capacitor4x3RM2-5_RevB;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A0162/543F4E32;
+Reference = C10;
+ValeurCmp = .1uF;
+IdModule  = Bus_Servo8:Capacitor4x3RM2-5_RevB;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A0162/543A1403;
+Reference = C11;
+ValeurCmp = .1uF;
+IdModule  = Bus_Servo8:Capacitor4x3RM2-5_RevB;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A0162/543A1385;
+Reference = D1;
+ValeurCmp = SD101C-TR;
+IdModule  = Bus_Servo8:Diode_DO-41_SOD81_Horizontal_RM10;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A0162/543A1740;
+Reference = D2;
+ValeurCmp = LED;
+IdModule  = Bus_Servo8:T1_LED;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A0162/543A12F4;
+Reference = G1;
+ValeurCmp = OSHW_LOGO;
+IdModule  = Bus_Servo8:OSHW_LOGO_300mil;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A0162/543A12DF;
+Reference = H1;
+ValeurCmp = 3MM_HOLE;
+IdModule  = Bus_Servo8:MountingHole_3mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A0162/543A1418;
+Reference = H2;
+ValeurCmp = 3MM_HOLE;
+IdModule  = Bus_Servo8:MountingHole_3mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A0162/543A141F;
+Reference = H3;
+ValeurCmp = 3MM_HOLE;
+IdModule  = Bus_Servo8:MountingHole_3mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A0162/543A1426;
+Reference = H4;
+ValeurCmp = 3MM_HOLE;
+IdModule  = Bus_Servo8:MountingHole_3mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A0162/543A138C;
+Reference = J1;
+ValeurCmp = TERMINATE_JUMPER;
+IdModule  = Bus_Servo8:Pin_Header_Straight_1x03;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A0162/5441F7E0;
+Reference = N1;
+ValeurCmp = BUS_SLAVE_HEADER;
+IdModule  = Bus_Servo8:Pin_Header_Straight_2x05_Shrouded;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A0162/543A1393;
+Reference = N4;
+ValeurCmp = FTDI_HEADER;
+IdModule  = Bus_Servo8:Pin_Header_Straight_1x06;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A0162/5442B70F;
+Reference = N5;
+ValeurCmp = REGULATOR_CONNECTOR;
+IdModule  = Bus_Servo8:OKI_DC_TO_DC_CONNECTOR;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A0162/543A16EF;
+Reference = N6;
+ValeurCmp = AVR_ISP_HEADER;
+IdModule  = Bus_Servo8:Pin_Header_Straight_2x03;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A0165/5442F755;
+Reference = N11;
+ValeurCmp = SRV_HDR2;
+IdModule  = Bus_Servo8:Pin_Header_Straight_2x03;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A0165/544306B1;
+Reference = N12;
+ValeurCmp = SRV_HDR2;
+IdModule  = Bus_Servo8:Pin_Header_Straight_2x03;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A0165/54433817;
+Reference = N13;
+ValeurCmp = SRV_HDR2;
+IdModule  = Bus_Servo8:Pin_Header_Straight_2x03;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A0165/54433C9D;
+Reference = N14;
+ValeurCmp = SRV_HDR2;
+IdModule  = Bus_Servo8:Pin_Header_Straight_2x03;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A0162/543A139A;
+Reference = R2;
+ValeurCmp = 120;
+IdModule  = Bus_Servo8:Resistor_Horizontal_400;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A0162/543A13DE;
+Reference = R3;
+ValeurCmp = 22K;
+IdModule  = Bus_Servo8:Resistor_Horizontal_400;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A0162/543A13E5;
+Reference = R4;
+ValeurCmp = 33K;
+IdModule  = Bus_Servo8:Resistor_Horizontal_400;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A0162/543A13EC;
+Reference = R5;
+ValeurCmp = 100K;
+IdModule  = Bus_Servo8:Resistor_Horizontal_400;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A0162/543A13F3;
+Reference = R6;
+ValeurCmp = 100K;
+IdModule  = Bus_Servo8:Resistor_Horizontal_400;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A0162/543D8280;
+Reference = R7;
+ValeurCmp = 100K;
+IdModule  = Bus_Servo8:Resistor_Horizontal_400;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A0162/543A140A;
+Reference = R8;
+ValeurCmp = 10K;
+IdModule  = Bus_Servo8:Resistor_Horizontal_400;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A0162/54C52467;
+Reference = R9;
+ValeurCmp = 470;
+IdModule  = Bus_Servo8:Resistor_Horizontal_400;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A0165/54432756;
+Reference = R11;
+ValeurCmp = 10Kx8;
+IdModule  = Bus_Servo8:Pin_Header_Straight_1x09;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A0162/54C51F5D;
+Reference = R14;
+ValeurCmp = 470;
+IdModule  = Bus_Servo8:Resistor_Horizontal_400;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A0162/54C52116;
+Reference = R15;
+ValeurCmp = 470;
+IdModule  = Bus_Servo8:Resistor_Horizontal_400;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A0162/54C5215A;
+Reference = R16;
+ValeurCmp = 470;
+IdModule  = Bus_Servo8:Resistor_Horizontal_400;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A0162/54C5219F;
+Reference = R17;
+ValeurCmp = 470;
+IdModule  = Bus_Servo8:Resistor_Horizontal_400;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A0162/543A1411;
+Reference = SW1;
+ValeurCmp = MJTP1243;
+IdModule  = Bus_Servo8:Button_6.5MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A0162/543A13FC;
+Reference = U1;
+ValeurCmp = 74HCT08;
+IdModule  = Bus_Servo8:DIP-14__300;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A0162/54C4ADB0;
+Reference = U2;
+ValeurCmp = L78L05AC;
+IdModule  = Bus_Servo8:TO92_123;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A0162/543A137E;
+Reference = U3;
+ValeurCmp = MCP2562;
+IdModule  = Bus_Servo8:DIP-8__300;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A0162/543A136E;
+Reference = U4;
+ValeurCmp = ATMEGA328_DIP28;
+IdModule  = Bus_Servo8:DIP-28__300;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A0165/543A2481;
+Reference = U9;
+ValeurCmp = LTV-826;
+IdModule  = Bus_Servo8:DIP-8__300;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A0165/543ABB5F;
+Reference = U10;
+ValeurCmp = LTV-826;
+IdModule  = Bus_Servo8:DIP-8__300;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A0165/543ABE70;
+Reference = U11;
+ValeurCmp = LTV-826;
+IdModule  = Bus_Servo8:DIP-8__300;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A0165/543ABF91;
+Reference = U12;
+ValeurCmp = LTV-826;
+IdModule  = Bus_Servo8:DIP-8__300;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A0162/543A13C5;
+Reference = X1;
+ValeurCmp = 16MHz;
+IdModule  = Bus_Servo8:Crystal_HC49-U_Vertical;
+EndCmp
+
+EndListe

@@ -1,0 +1,13 @@
+(module TO92_123 (layer F.Cu) (tedit 54406A2D)
+  (fp_text reference Q2 (at 0 2.159 180) (layer F.SilkS)
+    (effects (font (size 1.016 1.016) (thickness 0.2032)))
+  )
+  (fp_text value PN2222 (at 0 -3.302) (layer F.SilkS) hide
+    (effects (font (size 1.016 1.016) (thickness 0.2032)))
+  )
+  (fp_arc (start 0 0) (end -2.1844 1.27) (angle 240) (layer F.SilkS) (width 0.15))
+  (fp_line (start -2.1844 1.27) (end 2.2098 1.27) (layer F.SilkS) (width 0.15))
+  (pad 1 thru_hole circle (at -1.27 0.635) (size 1.524 1.524) (drill 0.762) (layers *.Cu *.Mask F.SilkS))
+  (pad 2 thru_hole circle (at 0 -1.27) (size 1.524 1.524) (drill 0.762) (layers *.Cu *.Mask F.SilkS))
+  (pad 3 thru_hole circle (at 1.27 0.635) (size 1.524 1.524) (drill 0.762) (layers *.Cu *.Mask F.SilkS))
+)

@@ -1,0 +1,63 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP +5V
+D +5V Power Rail
+$ENDCMP
+#
+$CMP 2_LEAD_PUSH_BUTTON
+D 2-lead Push Button
+$ENDCMP
+#
+$CMP 74LS09
+D Quad 2-input AND Gate
+$ENDCMP
+#
+$CMP BUS_SLAVE_HEADER
+D Bus Slave Header
+$ENDCMP
+#
+$CMP CRYSTAL
+D Crystal
+$ENDCMP
+#
+$CMP C_HORIZ
+D Horizontal Capacitor
+$ENDCMP
+#
+$CMP FTDI_HEADER
+D FTDI USB to Serial Connector
+$ENDCMP
+#
+$CMP GND
+D Ground Return Rail
+$ENDCMP
+#
+$CMP LED
+D Light Emitting Diode (LED)
+$ENDCMP
+#
+$CMP LED_JUMPER
+D LED Jumper
+$ENDCMP
+#
+$CMP MCP2562
+D Microchip MCP2562 CAN Bus Transceiver
+$ENDCMP
+#
+$CMP OPTO_ISOLATOR
+D 8-pin Opto-isolator
+$ENDCMP
+#
+$CMP SCHOTTKY_DIODE_VERT
+D Schottky Diode
+$ENDCMP
+#
+$CMP TERMINATE_JUMPER
+D Bus Termination Jumper
+$ENDCMP
+#
+$CMP VOLTAGE_REGULATOR_321
+D 3-pin Voltage Regulator
+$ENDCMP
+#
+#End Doc Library

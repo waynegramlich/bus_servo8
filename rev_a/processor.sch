@@ -1,0 +1,1221 @@
+EESchema Schematic File Version 2
+LIBS:bus_servo8
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:bus_servo8-cache
+EELAYER 25 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 3 3
+Title "Bus Servo 8"
+Date "Sun 25 Jan 2015"
+Rev "A"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 3MM_HOLE H1
+U 1 1 543A12DF
+P 1350 6400
+F 0 "H1" H 1350 6550 50  0000 C CNN
+F 1 "3MM_HOLE" H 1350 6250 50  0000 C CNN
+F 2 "Bus_Servo8:MountingHole_3mm" H 1400 6400 60  0000 C CNN
+F 3 "" H 1400 6400 60  0000 C CNN
+	1    1350 6400
+	1    0    0    -1  
+$EndComp
+Text Label 5900 2000 2    50   ~ 0
+D6
+Text Label 5900 1900 2    50   ~ 0
+D5
+Text Label 5900 1300 2    50   ~ 0
+D3
+Text Label 5900 1200 2    50   ~ 0
+D2
+$Comp
+L OSHW_LOGO G1
+U 1 1 543A12F4
+P 7650 5825
+F 0 "G1" H 7650 6025 60  0000 C CNN
+F 1 "OSHW_LOGO" H 7650 5650 50  0000 C CNN
+F 2 "Bus_Servo8:OSHW_LOGO_300mil" H 7650 5825 60  0001 C CNN
+F 3 "" H 7650 5825 60  0000 C CNN
+	1    7650 5825
+	1    0    0    -1  
+$EndComp
+$Comp
+L ATMEGA328_DIP28 U4
+U 1 1 543A136E
+P 6900 1550
+F 0 "U4" H 6875 2350 50  0000 C CNN
+F 1 "ATMEGA328_DIP28" H 6900 725 50  0000 C CNN
+F 2 "Bus_Servo8:DIP-28__300" H 6900 1550 50  0001 C CNN
+F 3 "" H 6900 1550 60  0000 C CNN
+	1    6900 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCP2562 U3
+U 1 1 543A137E
+P 4100 3500
+F 0 "U3" H 3850 3800 50  0000 C CNN
+F 1 "MCP2562" H 4075 3300 50  0000 C CNN
+F 2 "Bus_Servo8:DIP-8__300" H 4150 3500 60  0001 C CNN
+F 3 "" H 4150 3500 60  0000 C CNN
+	1    4100 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L SCHOTTKY_DIODE_VERT D1
+U 1 1 543A1385
+P 6000 4950
+F 0 "D1" H 6100 4800 50  0000 C CNN
+F 1 "SD101C-TR" H 6275 5075 50  0000 C CNN
+F 2 "Bus_Servo8:Diode_DO-41_SOD81_Horizontal_RM10" H 6000 4950 60  0001 C CNN
+F 3 "" H 6000 4950 60  0000 C CNN
+	1    6000 4950
+	-1   0    0    1   
+$EndComp
+$Comp
+L TERMINATE_JUMPER J1
+U 1 1 543A138C
+P 3700 3950
+F 0 "J1" H 3750 4150 50  0000 C CNN
+F 1 "TERMINATE_JUMPER" H 3700 3750 50  0000 C CNN
+F 2 "Bus_Servo8:Pin_Header_Straight_1x03" H 3700 3950 60  0001 C CNN
+F 3 "" H 3700 3950 60  0000 C CNN
+	1    3700 3950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L FTDI_HEADER N4
+U 1 1 543A1393
+P 2650 5850
+F 0 "N4" H 2550 6450 50  0000 C CNN
+F 1 "FTDI_HEADER" H 2650 5625 50  0000 C CNN
+F 2 "Bus_Servo8:Pin_Header_Straight_1x06" H 2650 5850 60  0001 C CNN
+F 3 "" H 2650 5850 60  0000 C CNN
+	1    2650 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_HORIZ R2
+U 1 1 543A139A
+P 3100 3950
+F 0 "R2" H 3100 4050 50  0000 C CNN
+F 1 "120" H 3100 3850 50  0000 C CNN
+F 2 "Bus_Servo8:Resistor_Horizontal_400" H 3125 3950 60  0001 C CNN
+F 3 "" H 3125 3950 60  0000 C CNN
+	1    3100 3950
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3400 4050
+$Comp
+L C_VERT C1
+U 1 1 543A13A9
+P 1900 2250
+F 0 "C1" H 1920 2340 50  0000 L CNN
+F 1 "1uF" H 1920 2160 50  0000 L CNN
+F 2 "Bus_Servo8:Capacitor3MMDiscRM2.5" H 1938 2100 30  0001 C CNN
+F 3 "" H 1900 2250 60  0000 C CNN
+	1    1900 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_VERT C4
+U 1 1 543A13BE
+P 3300 2250
+F 0 "C4" H 3320 2340 50  0000 L CNN
+F 1 "1uF" H 3320 2160 50  0000 L CNN
+F 2 "Bus_Servo8:Capacitor3MMDiscRM2.5" H 3338 2100 30  0001 C CNN
+F 3 "" H 3300 2250 60  0000 C CNN
+	1    3300 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CRYSTAL X1
+U 1 1 543A13C5
+P 4600 1800
+F 0 "X1" H 4600 1950 50  0000 C CNN
+F 1 "16MHz" H 4600 1650 50  0000 C CNN
+F 2 "Bus_Servo8:Crystal_HC49-U_Vertical" H 4600 1800 60  0001 C CNN
+F 3 "" H 4600 1800 60  0000 C CNN
+	1    4600 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_VERT C5
+U 1 1 543A13CC
+P 4200 2100
+F 0 "C5" H 4220 2190 50  0000 L CNN
+F 1 "18pF" H 4220 2010 50  0000 L CNN
+F 2 "Bus_Servo8:Capacitor4x3RM2-5_RevB" H 4238 1950 30  0001 C CNN
+F 3 "" H 4200 2100 60  0000 C CNN
+	1    4200 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_VERT C9
+U 1 1 543A13D3
+P 5000 2100
+F 0 "C9" H 5020 2190 50  0000 L CNN
+F 1 "18pF" H 5020 2010 50  0000 L CNN
+F 2 "Bus_Servo8:Capacitor4x3RM2-5_RevB" H 5038 1950 30  0001 C CNN
+F 3 "" H 5000 2100 60  0000 C CNN
+	1    5000 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_VERT R3
+U 1 1 543A13DE
+P 3300 5100
+F 0 "R3" H 3370 5150 50  0000 L CNN
+F 1 "22K" H 3370 5050 50  0000 L CNN
+F 2 "Bus_Servo8:Resistor_Horizontal_400" H 3300 5150 60  0001 C CNN
+F 3 "" H 3300 5150 60  0000 C CNN
+	1    3300 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_VERT R4
+U 1 1 543A13E5
+P 3300 5900
+F 0 "R4" H 3370 5950 50  0000 L CNN
+F 1 "33K" H 3370 5850 50  0000 L CNN
+F 2 "Bus_Servo8:Resistor_Horizontal_400" H 3300 5950 60  0001 C CNN
+F 3 "" H 3300 5950 60  0000 C CNN
+	1    3300 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_VERT R5
+U 1 1 543A13EC
+P 3600 5100
+F 0 "R5" H 3670 5150 50  0000 L CNN
+F 1 "100K" H 3670 5050 50  0000 L CNN
+F 2 "Bus_Servo8:Resistor_Horizontal_400" H 3600 5150 60  0001 C CNN
+F 3 "" H 3600 5150 60  0000 C CNN
+	1    3600 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_VERT R6
+U 1 1 543A13F3
+P 3900 5100
+F 0 "R6" H 3970 5150 50  0000 L CNN
+F 1 "100K" H 3970 5050 50  0000 L CNN
+F 2 "Bus_Servo8:Resistor_Horizontal_400" H 3900 5150 60  0001 C CNN
+F 3 "" H 3900 5150 60  0000 C CNN
+	1    3900 5100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3000 5700
+NoConn ~ 3000 5800
+$Comp
+L 74X08 U1
+U 3 1 543A13FC
+P 4900 5300
+F 0 "U1" H 4900 5550 50  0000 C CNN
+F 1 "74HCT08" H 4775 5050 50  0000 C CNN
+F 2 "Bus_Servo8:DIP-14__300" H 4900 5300 60  0001 C CNN
+F 3 "" H 4900 5300 60  0000 C CNN
+	3    4900 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_HORIZ C11
+U 1 1 543A1403
+P 5700 5300
+F 0 "C11" H 5760 5360 50  0000 L CNN
+F 1 ".1uF" H 5760 5230 50  0000 L CNN
+F 2 "Bus_Servo8:Capacitor4x3RM2-5_RevB" H 5738 5150 30  0001 C CNN
+F 3 "" H 5700 5300 60  0000 C CNN
+	1    5700 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_VERT R8
+U 1 1 543A140A
+P 6300 5000
+F 0 "R8" H 6370 5050 50  0000 L CNN
+F 1 "10K" H 6370 4950 50  0000 L CNN
+F 2 "Bus_Servo8:Resistor_Horizontal_400" H 6300 5050 60  0001 C CNN
+F 3 "" H 6300 5050 60  0000 C CNN
+	1    6300 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 2_LEAD_PUSH_BUTTON SW1
+U 1 1 543A1411
+P 6200 5750
+F 0 "SW1" H 6200 6000 50  0000 C CNN
+F 1 "MJTP1243" H 6200 5700 50  0000 C CNN
+F 2 "Bus_Servo8:Button_6.5MM" H 6200 5750 60  0001 C CNN
+F 3 "" H 6200 5750 60  0000 C CNN
+	1    6200 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L 3MM_HOLE H2
+U 1 1 543A1418
+P 1350 6800
+F 0 "H2" H 1300 6950 50  0000 C CNN
+F 1 "3MM_HOLE" H 1350 6650 50  0000 C CNN
+F 2 "Bus_Servo8:MountingHole_3mm" H 1350 6800 60  0001 C CNN
+F 3 "" H 1350 6800 60  0000 C CNN
+	1    1350 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L 3MM_HOLE H3
+U 1 1 543A141F
+P 1350 7200
+F 0 "H3" H 1300 7350 50  0000 C CNN
+F 1 "3MM_HOLE" H 1350 7050 50  0000 C CNN
+F 2 "Bus_Servo8:MountingHole_3mm" H 1350 7200 60  0001 C CNN
+F 3 "" H 1350 7200 60  0000 C CNN
+	1    1350 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L 3MM_HOLE H4
+U 1 1 543A1426
+P 1350 7600
+F 0 "H4" H 1300 7750 50  0000 C CNN
+F 1 "3MM_HOLE" H 1350 7450 50  0000 C CNN
+F 2 "Bus_Servo8:MountingHole_3mm" H 1350 7600 60  0001 C CNN
+F 3 "" H 1350 7600 60  0000 C CNN
+	1    1350 7600
+	1    0    0    -1  
+$EndComp
+Text Label 3050 1950 0    50   ~ 0
+VCC
+$Comp
+L +5V #PWR01
+U 1 1 543A142E
+P 3300 1850
+F 0 "#PWR01" H 3300 1940 20  0001 C CNN
+F 1 "+5V" H 3300 1955 50  0000 C CNN
+F 2 "" H 3300 1850 60  0000 C CNN
+F 3 "" H 3300 1850 60  0000 C CNN
+	1    3300 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR02
+U 1 1 543A1446
+P 6000 4400
+F 0 "#PWR02" H 6000 4490 20  0001 C CNN
+F 1 "+5V" H 6000 4505 50  0000 C CNN
+F 2 "" H 6000 4400 60  0000 C CNN
+F 3 "" H 6000 4400 60  0000 C CNN
+	1    6000 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 543A144C
+P 5500 6300
+F 0 "#PWR03" H 5500 6300 30  0001 C CNN
+F 1 "GND" H 5500 6230 30  0001 C CNN
+F 2 "" H 5500 6300 60  0000 C CNN
+F 3 "" H 5500 6300 60  0000 C CNN
+	1    5500 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR04
+U 1 1 543A145E
+P 8100 1550
+F 0 "#PWR04" H 8100 1640 20  0001 C CNN
+F 1 "+5V" H 8100 1655 50  0000 C CNN
+F 2 "" H 8100 1550 60  0000 C CNN
+F 3 "" H 8100 1550 60  0000 C CNN
+	1    8100 1550
+	1    0    0    -1  
+$EndComp
+Text Label 5900 1100 2    50   ~ 0
+TXD
+$Comp
+L C_VERT C6
+U 1 1 543A1499
+P 4300 7300
+F 0 "C6" H 4320 7390 50  0000 L CNN
+F 1 ".1uF" H 4320 7210 50  0000 L CNN
+F 2 "Bus_Servo8:Capacitor4x3RM2-5_RevB" H 4338 7150 30  0001 C CNN
+F 3 "" H 4300 7300 60  0000 C CNN
+	1    4300 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_VERT C7
+U 1 1 543A14A0
+P 4600 7300
+F 0 "C7" H 4620 7390 50  0000 L CNN
+F 1 ".1uF" H 4620 7210 50  0000 L CNN
+F 2 "Bus_Servo8:Capacitor4x3RM2-5_RevB" H 4638 7150 30  0001 C CNN
+F 3 "" H 4600 7300 60  0000 C CNN
+	1    4600 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_VERT C8
+U 1 1 543A14A7
+P 4900 7300
+F 0 "C8" H 4920 7390 50  0000 L CNN
+F 1 ".1uF" H 4920 7210 50  0000 L CNN
+F 2 "Bus_Servo8:Capacitor4x3RM2-5_RevB" H 4938 7150 30  0001 C CNN
+F 3 "" H 4900 7300 60  0000 C CNN
+	1    4900 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR05
+U 1 1 543A14B5
+P 4300 6900
+F 0 "#PWR05" H 4300 6990 20  0001 C CNN
+F 1 "+5V" H 4300 7005 50  0000 C CNN
+F 2 "" H 4300 6900 60  0000 C CNN
+F 3 "" H 4300 6900 60  0000 C CNN
+	1    4300 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 543A14BB
+P 4300 7700
+F 0 "#PWR06" H 4300 7700 30  0001 C CNN
+F 1 "GND" H 4300 7630 30  0001 C CNN
+F 2 "" H 4300 7700 60  0000 C CNN
+F 3 "" H 4300 7700 60  0000 C CNN
+	1    4300 7700
+	1    0    0    -1  
+$EndComp
+Text Notes 4425 7700 0    50   ~ 0
+Filter Capacitors
+Text Notes 6350 4700 0    50   ~ 0
+Reset Circuitry
+Text Notes 2450 6250 0    50   ~ 0
+Programmer
+$Comp
+L 74X08 U1
+U 2 1 543A14D3
+P 3600 1000
+F 0 "U1" H 3600 1250 50  0000 C CNN
+F 1 "74HCT08" H 3475 750 50  0000 C CNN
+F 2 "Bus_Servo8:DIP-14__300" H 3600 1000 60  0001 C CNN
+F 3 "" H 3600 1000 60  0000 C CNN
+	2    3600 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74X08 U1
+U 1 1 543A14DA
+P 2300 1000
+F 0 "U1" H 2300 1250 50  0000 C CNN
+F 1 "74HCT08" H 2175 750 50  0000 C CNN
+F 2 "Bus_Servo8:DIP-14__300" H 2300 1000 60  0001 C CNN
+F 3 "" H 2300 1000 60  0000 C CNN
+	1    2300 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L AVR_ISP_HEADER N6
+U 1 1 543A16EF
+P 7300 2850
+F 0 "N6" H 7150 2500 50  0000 C CNN
+F 1 "AVR_ISP_HEADER" H 7300 3200 50  0000 C CNN
+F 2 "Bus_Servo8:Pin_Header_Straight_2x03" H 7300 2850 60  0001 C CNN
+F 3 "" H 7300 2850 60  0000 C CNN
+	1    7300 2850
+	-1   0    0    1   
+$EndComp
+$Comp
+L +5V #PWR07
+U 1 1 543A170D
+P 7800 2500
+F 0 "#PWR07" H 7800 2590 20  0001 C CNN
+F 1 "+5V" H 7800 2605 50  0000 C CNN
+F 2 "" H 7800 2500 60  0000 C CNN
+F 3 "" H 7800 2500 60  0000 C CNN
+	1    7800 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D2
+U 1 1 543A1740
+P 7200 4750
+F 0 "D2" H 7270 4910 50  0000 C CNN
+F 1 "LED" H 7310 4625 50  0000 C CNN
+F 2 "Bus_Servo8:T1_LED" H 7200 4750 60  0001 C CNN
+F 3 "" H 7200 4750 60  0000 C CNN
+	1    7200 4750
+	1    0    0    -1  
+$EndComp
+Text Label 5900 1000 2    50   ~ 0
+RXD
+Text Label 7900 2200 0    50   ~ 0
+D9
+Text Label 7900 2100 0    50   ~ 0
+D10
+Text Label 7900 2000 0    50   ~ 0
+D11
+Text Label 7900 1900 0    50   ~ 0
+D12
+Text Label 7900 1800 0    50   ~ 0
+D13
+Entry Wire Line
+	5400 1000 5500 1100
+Entry Wire Line
+	5400 900  5500 1000
+Entry Wire Line
+	5400 1100 5500 1200
+Entry Wire Line
+	5400 1200 5500 1300
+$Comp
+L +5V #PWR08
+U 1 1 543BE462
+P 5200 1400
+F 0 "#PWR08" H 5200 1490 20  0001 C CNN
+F 1 "+5V" H 5200 1505 50  0000 C CNN
+F 2 "" H 5200 1400 60  0000 C CNN
+F 3 "" H 5200 1400 60  0000 C CNN
+	1    5200 1400
+	1    0    0    -1  
+$EndComp
+Entry Wire Line
+	5400 2100 5500 2000
+Entry Wire Line
+	5400 2000 5500 1900
+Entry Wire Line
+	8100 1800 8200 1900
+Entry Wire Line
+	8100 1900 8200 2000
+Entry Wire Line
+	8100 2000 8200 2100
+Entry Wire Line
+	8100 2100 8200 2200
+Entry Wire Line
+	8100 2200 8200 2300
+Text Label 5900 900  2    50   ~ 0
+~RESET
+Entry Wire Line
+	5400 800  5500 900 
+$Comp
+L 74X08 U1
+U 4 2 543A14CC
+P 5800 3700
+F 0 "U1" H 5800 3950 50  0000 C CNN
+F 1 "74HCT08" H 5750 3450 50  0000 C CNN
+F 2 "Bus_Servo8:DIP-14__300" H 5800 3700 60  0001 C CNN
+F 3 "" H 5800 3700 60  0000 C CNN
+	4    5800 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR09
+U 1 1 543D2F2C
+P 4700 3700
+F 0 "#PWR09" H 4700 3700 30  0001 C CNN
+F 1 "GND" H 4700 3630 30  0001 C CNN
+F 2 "" H 4700 3700 60  0000 C CNN
+F 3 "" H 4700 3700 60  0000 C CNN
+	1    4700 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR010
+U 1 1 543D3144
+P 4800 2900
+F 0 "#PWR010" H 4800 2990 20  0001 C CNN
+F 1 "+5V" H 4800 3005 50  0000 C CNN
+F 2 "" H 4800 2900 60  0000 C CNN
+F 3 "" H 4800 2900 60  0000 C CNN
+	1    4800 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR011
+U 1 1 543D3E99
+P 7800 3200
+F 0 "#PWR011" H 7800 3200 30  0001 C CNN
+F 1 "GND" H 7800 3130 30  0001 C CNN
+F 2 "" H 7800 3200 60  0000 C CNN
+F 3 "" H 7800 3200 60  0000 C CNN
+	1    7800 3200
+	1    0    0    -1  
+$EndComp
+Text Label 7900 2600 0    50   ~ 0
+D12
+Text Label 7900 2900 0    50   ~ 0
+D11
+Text Label 7900 2800 0    50   ~ 0
+D13
+Text Label 7900 3000 0    50   ~ 0
+~RESET
+Entry Wire Line
+	8100 2600 8200 2500
+Entry Wire Line
+	8100 2800 8200 2700
+Entry Wire Line
+	8100 2900 8200 2800
+Entry Wire Line
+	8100 3000 8200 2900
+$Comp
+L R_VERT R7
+U 1 1 543D8280
+P 5200 3300
+F 0 "R7" H 5270 3350 50  0000 L CNN
+F 1 "100K" H 5270 3250 50  0000 L CNN
+F 2 "Bus_Servo8:Resistor_Horizontal_400" H 5200 3350 60  0001 C CNN
+F 3 "" H 5200 3350 60  0000 C CNN
+	1    5200 3300
+	1    0    0    -1  
+$EndComp
+Entry Wire Line
+	8100 3700 8200 3600
+Entry Wire Line
+	8100 4200 8200 4100
+Entry Wire Line
+	8100 5300 8200 5200
+Text Label 7850 5300 0    50   ~ 0
+~RESET
+Text Label 8000 3700 2    50   ~ 0
+RXD
+Text Label 8000 4200 2    50   ~ 0
+TXD
+Entry Wire Line
+	8100 3300 8200 3200
+Text Label 7900 3300 0    50   ~ 0
+A4
+NoConn ~ 7800 900 
+$Comp
+L GND #PWR012
+U 1 1 543B231C
+P 5000 2500
+F 0 "#PWR012" H 5000 2500 30  0001 C CNN
+F 1 "GND" H 5000 2430 30  0001 C CNN
+F 2 "" H 5000 2500 60  0000 C CNN
+F 3 "" H 5000 2500 60  0000 C CNN
+	1    5000 2500
+	1    0    0    -1  
+$EndComp
+Text Notes 6250 3850 0    50   ~ 0
+UART Circuitry
+Text Notes 2000 1700 0    50   ~ 0
+5V Power Supply
+Text Notes 2600 1300 0    50   ~ 0
+Unused
+Text Notes 3950 5750 0    50   ~ 0
+Note: U7 has VCC connected to pin 14\nand  GND connected to pin 7.
+Text Notes 6225 2925 0    50   ~ 0
+In Circuit Programmer\nCircuitry
+Text Notes 3900 3950 0    50   ~ 0
+Bus Circuitry
+Text Notes 1025 6100 0    50   ~ 0
+Mounting Holes
+Text Notes 7350 6275 0    50   ~ 0
+Open Source\nHardware Logo
+Text Notes 6050 2525 0    50   ~ 0
+Microcontroller + Crystal
+Text Label 2050 2750 0    50   ~ 0
+GND
+$Comp
+L C_VERT C10
+U 1 1 543F4E32
+P 5200 7300
+F 0 "C10" H 5220 7390 50  0000 L CNN
+F 1 ".1uF" H 5220 7210 50  0000 L CNN
+F 2 "Bus_Servo8:Capacitor4x3RM2-5_RevB" H 5238 7150 30  0001 C CNN
+F 3 "" H 5200 7300 60  0000 C CNN
+	1    5200 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L BUS_SLAVE_HEADER N1
+U 1 1 5441F7E0
+P 1100 3450
+F 0 "N1" H 925 4000 50  0000 C CNN
+F 1 "BUS_SLAVE_HEADER" H 1100 2900 50  0000 C CNN
+F 2 "Bus_Servo8:Pin_Header_Straight_2x05_Shrouded" H 1100 3450 60  0001 C CNN
+F 3 "" H 1100 3450 60  0000 C CNN
+	1    1100 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR013
+U 1 1 543A1464
+P 8000 1600
+F 0 "#PWR013" H 8000 1600 30  0001 C CNN
+F 1 "GND" H 8000 1530 30  0001 C CNN
+F 2 "" H 8000 1600 60  0000 C CNN
+F 3 "" H 8000 1600 60  0000 C CNN
+	1    8000 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L REGULATOR_CONNECTOR N5
+U 1 1 5442B70F
+P 2450 3800
+F 0 "N5" H 2450 3600 50  0000 C CNN
+F 1 "REGULATOR_CONNECTOR" H 2500 4000 50  0000 C CNN
+F 2 "Bus_Servo8:OKI_DC_TO_DC_CONNECTOR" H 2450 3800 60  0001 C CNN
+F 3 "" H 2450 3800 60  0000 C CNN
+	1    2450 3800
+	1    0    0    1   
+$EndComp
+Text HLabel 2400 4300 2    50   Input ~ 0
+BGND
+Text HLabel 2400 4200 2    50   Input ~ 0
+B5V
+Entry Wire Line
+	8100 4400 8200 4300
+$Comp
+L GND #PWR014
+U 1 1 5442D71D
+P 7200 5100
+F 0 "#PWR014" H 7200 5100 30  0001 C CNN
+F 1 "GND" H 7200 5030 30  0001 C CNN
+F 2 "" H 7200 5100 60  0000 C CNN
+F 3 "" H 7200 5100 60  0000 C CNN
+	1    7200 5100
+	1    0    0    -1  
+$EndComp
+Text HLabel 9500 2800 2    50   Input ~ 0
+PULSE3
+Text HLabel 9500 3100 2    50   Input ~ 0
+PULSE2
+Text HLabel 9500 3400 2    50   Input ~ 0
+PULSE1
+Text HLabel 9500 3700 2    50   Input ~ 0
+PULSE0
+Text HLabel 9500 4600 2    50   Input ~ 0
+~SELECT1
+Text HLabel 9500 4700 2    50   Input ~ 0
+~SELECT0
+Entry Wire Line
+	8400 2700 8500 2800
+Entry Wire Line
+	8400 3000 8500 3100
+Entry Wire Line
+	8400 3300 8500 3400
+Entry Wire Line
+	8400 3600 8500 3700
+Entry Wire Line
+	8400 4500 8500 4600
+Entry Wire Line
+	8400 4600 8500 4700
+Text Label 8600 3700 0    50   ~ 0
+D5
+Text Label 8600 3400 0    50   ~ 0
+D6
+Text Label 8600 3100 0    50   ~ 0
+D9
+Text Label 8600 2800 0    50   ~ 0
+D10
+Text Label 8600 4600 0    50   ~ 0
+D3
+Text Label 8600 4700 0    50   ~ 0
+D2
+Text Label 8000 4400 2    50   ~ 0
+D13
+$Comp
+L GND #PWR015
+U 1 1 544316DB
+P 2450 2850
+F 0 "#PWR015" H 2450 2850 30  0001 C CNN
+F 1 "GND" H 2450 2780 30  0001 C CNN
+F 2 "" H 2450 2850 60  0000 C CNN
+F 3 "" H 2450 2850 60  0000 C CNN
+	1    2450 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR016
+U 1 1 54431ACC
+P 1700 800
+F 0 "#PWR016" H 1700 890 20  0001 C CNN
+F 1 "+5V" H 1700 905 50  0000 C CNN
+F 2 "" H 1700 800 60  0000 C CNN
+F 3 "" H 1700 800 60  0000 C CNN
+	1    1700 800 
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4100 1000
+NoConn ~ 6000 2200
+Entry Wire Line
+	8100 1000 8200 900 
+Text Label 7900 1000 0    50   ~ 0
+A4
+Connection ~ 1900 1950
+Wire Wire Line
+	1600 1950 2000 1950
+Wire Wire Line
+	1900 2050 1900 1950
+Wire Wire Line
+	1900 3200 1900 2450
+Wire Wire Line
+	3300 2750 3300 2450
+Connection ~ 3300 1950
+Wire Wire Line
+	3300 1850 3300 2050
+Wire Wire Line
+	4600 3600 5300 3600
+Wire Wire Line
+	3400 3600 3600 3600
+Wire Wire Line
+	4800 3500 4600 3500
+Wire Wire Line
+	4700 3400 4600 3400
+Wire Wire Line
+	1500 3500 3600 3500
+Wire Wire Line
+	1500 3400 3600 3400
+Wire Wire Line
+	2800 3500 2800 3950
+Wire Wire Line
+	2800 3950 2900 3950
+Wire Wire Line
+	3400 3950 3300 3950
+Wire Wire Line
+	3300 3850 3400 3850
+Wire Wire Line
+	3300 3400 3300 3850
+Wire Wire Line
+	4900 1800 6000 1800
+Wire Wire Line
+	4300 1800 4200 1800
+Connection ~ 4200 1800
+Wire Wire Line
+	5000 1900 5000 1800
+Connection ~ 5000 1800
+Wire Wire Line
+	4200 2300 4200 2400
+Wire Wire Line
+	5000 2300 5000 2500
+Wire Wire Line
+	7800 1500 8000 1500
+Wire Wire Line
+	7800 1600 7900 1600
+Wire Wire Line
+	3600 4900 3600 4800
+Wire Wire Line
+	3900 4900 3900 4800
+Connection ~ 3900 4800
+Wire Wire Line
+	3300 5300 3300 5700
+Wire Wire Line
+	3100 6200 5500 6200
+Wire Wire Line
+	3300 6100 3300 6200
+Connection ~ 3300 6200
+Wire Wire Line
+	3000 5900 3100 5900
+Wire Wire Line
+	3100 5900 3100 6200
+Wire Wire Line
+	3000 5400 4400 5400
+Connection ~ 3900 5400
+Wire Wire Line
+	4300 5200 4400 5200
+Wire Wire Line
+	5000 4700 3300 4700
+Wire Wire Line
+	3300 4700 3300 4900
+Wire Wire Line
+	3000 5600 3600 5600
+Wire Wire Line
+	3000 5500 3300 5500
+Connection ~ 3300 5500
+Wire Wire Line
+	6000 4400 6000 4700
+Wire Wire Line
+	5900 5300 8100 5300
+Wire Wire Line
+	6000 5300 6000 5200
+Wire Wire Line
+	6300 5300 6300 5200
+Connection ~ 6000 5300
+Wire Wire Line
+	6300 4500 6300 4800
+Wire Wire Line
+	5400 5300 5500 5300
+Wire Wire Line
+	6600 5300 6600 5750
+Connection ~ 6300 5300
+Wire Wire Line
+	6600 5750 6500 5750
+Connection ~ 6600 5300
+Wire Wire Line
+	5900 5750 5500 5750
+Connection ~ 2450 2750
+Wire Wire Line
+	2900 1950 3300 1950
+Wire Wire Line
+	3600 4800 5600 4800
+Wire Wire Line
+	5500 5750 5500 6300
+Connection ~ 5500 6200
+Wire Wire Line
+	8100 1700 8100 1550
+Wire Wire Line
+	8000 1500 8000 1600
+Wire Wire Line
+	3400 3000 3400 3600
+Wire Wire Line
+	4300 6900 4300 7100
+Connection ~ 4300 7000
+Wire Wire Line
+	4900 7000 4900 7100
+Wire Wire Line
+	4600 7100 4600 7000
+Connection ~ 4600 7000
+Wire Wire Line
+	4300 7500 4300 7700
+Connection ~ 4300 7600
+Wire Wire Line
+	4900 7600 4900 7500
+Wire Wire Line
+	4600 7500 4600 7600
+Connection ~ 4600 7600
+Wire Wire Line
+	3600 5600 3600 5300
+Wire Wire Line
+	3900 5400 3900 5300
+Wire Wire Line
+	4600 3300 5000 3300
+Wire Wire Line
+	7700 3100 7800 3100
+Wire Wire Line
+	8100 3000 7700 3000
+Wire Wire Line
+	7700 2800 8100 2800
+Wire Wire Line
+	7700 2600 8100 2600
+Wire Wire Line
+	7700 2900 8100 2900
+Wire Wire Line
+	7700 2700 7800 2700
+Wire Wire Line
+	7800 2700 7800 2500
+Wire Wire Line
+	8100 1800 7800 1800
+Wire Wire Line
+	7800 1900 8100 1900
+Wire Wire Line
+	8100 2000 7800 2000
+Wire Wire Line
+	7800 2100 8100 2100
+Wire Wire Line
+	8100 2200 7800 2200
+Wire Wire Line
+	6000 1000 5500 1000
+Wire Wire Line
+	5500 1100 6000 1100
+Wire Wire Line
+	6000 1200 5500 1200
+Wire Wire Line
+	5500 1300 6000 1300
+Wire Wire Line
+	7800 1700 8100 1700
+Wire Wire Line
+	7900 1600 7900 1700
+Wire Wire Line
+	6000 1500 5200 1500
+Wire Wire Line
+	5200 1500 5200 1400
+Wire Wire Line
+	6000 1600 5300 1600
+Wire Wire Line
+	5300 1600 5300 2400
+Wire Wire Line
+	4200 1500 4200 1900
+Wire Wire Line
+	4200 1500 5000 1500
+Wire Wire Line
+	5000 1500 5000 1700
+Wire Wire Line
+	5000 1700 6000 1700
+Wire Wire Line
+	5300 2400 4200 2400
+Connection ~ 5000 2400
+Wire Bus Line
+	5400 600  5400 2400
+Wire Wire Line
+	5500 900  6000 900 
+Connection ~ 3300 3400
+Wire Wire Line
+	4700 3400 4700 3700
+Wire Wire Line
+	4800 2900 4800 3500
+Wire Wire Line
+	7800 3100 7800 3200
+Connection ~ 1900 2750
+Wire Wire Line
+	5600 4800 5600 4500
+Wire Wire Line
+	5600 4500 6300 4500
+Connection ~ 6000 4500
+Wire Wire Line
+	5300 3800 4800 3800
+Wire Wire Line
+	4800 4500 3100 4500
+Wire Wire Line
+	5200 3000 5200 3100
+Wire Wire Line
+	3400 3000 5200 3000
+Connection ~ 4800 3000
+Wire Wire Line
+	3100 4500 3100 5600
+Connection ~ 3100 5600
+Wire Wire Line
+	4800 3800 4800 4500
+Wire Wire Line
+	5200 3500 5200 3600
+Connection ~ 5200 3600
+Wire Wire Line
+	5000 3300 5000 4700
+Wire Wire Line
+	5000 4200 8100 4200
+Wire Wire Line
+	6300 3700 8100 3700
+Connection ~ 5000 4200
+Wire Wire Line
+	3500 3300 3500 2700
+Wire Wire Line
+	3500 2700 5700 2700
+Wire Wire Line
+	5700 2700 5700 3300
+Wire Wire Line
+	5700 3300 8100 3300
+Connection ~ 2800 3500
+Wire Wire Line
+	4300 7000 5200 7000
+Wire Wire Line
+	4300 7600 5200 7600
+Wire Wire Line
+	4300 5200 4300 5400
+Connection ~ 4300 5400
+Wire Wire Line
+	5200 7600 5200 7500
+Connection ~ 4900 7600
+Wire Wire Line
+	5200 7000 5200 7100
+Connection ~ 4900 7000
+Wire Wire Line
+	1500 3000 1600 3000
+Wire Wire Line
+	1600 1950 1600 3100
+Wire Wire Line
+	1600 3100 1500 3100
+Connection ~ 1600 3000
+Wire Wire Line
+	1500 3200 1900 3200
+Wire Wire Line
+	1900 2750 3300 2750
+Wire Wire Line
+	1500 3300 1600 3300
+Wire Wire Line
+	1600 3300 1600 3200
+Connection ~ 1600 3200
+Wire Bus Line
+	5400 600  8200 600 
+Connection ~ 7900 1700
+Wire Wire Line
+	7200 4500 7200 4400
+Wire Wire Line
+	7200 4400 7400 4400
+Wire Wire Line
+	7800 4400 8100 4400
+Wire Wire Line
+	7200 5100 7200 5000
+Wire Bus Line
+	8200 600  8200 5300
+Wire Bus Line
+	8200 5300 8400 5300
+Wire Wire Line
+	8900 2800 8500 2800
+Wire Wire Line
+	8500 3100 8900 3100
+Wire Wire Line
+	8500 3400 8900 3400
+Wire Wire Line
+	8500 3700 8900 3700
+Wire Wire Line
+	8500 4600 9500 4600
+Wire Wire Line
+	8500 4700 9500 4700
+Wire Wire Line
+	1800 900  1700 900 
+Wire Wire Line
+	1700 800  1700 1100
+Wire Wire Line
+	1700 1100 1800 1100
+Connection ~ 1700 900 
+Wire Wire Line
+	3100 900  3000 900 
+Wire Wire Line
+	3000 900  3000 1100
+Wire Wire Line
+	3000 1000 2800 1000
+Wire Wire Line
+	3000 1100 3100 1100
+Connection ~ 3000 1000
+Wire Bus Line
+	8400 5300 8400 2600
+Wire Wire Line
+	9300 2800 9500 2800
+Wire Wire Line
+	9500 3100 9300 3100
+Wire Wire Line
+	9500 3400 9300 3400
+Wire Wire Line
+	9500 3700 9300 3700
+Wire Wire Line
+	3600 3300 3500 3300
+Wire Wire Line
+	7800 1000 8100 1000
+Wire Wire Line
+	1700 3800 2100 3800
+Wire Wire Line
+	1700 3600 1700 4300
+Wire Wire Line
+	1700 3600 1500 3600
+Wire Wire Line
+	1500 3700 1700 3700
+Connection ~ 1700 3700
+Wire Wire Line
+	1500 3800 1600 3800
+Wire Wire Line
+	1600 3800 1600 3900
+Wire Wire Line
+	1500 3900 2100 3900
+Connection ~ 1600 3900
+Wire Wire Line
+	1700 4300 2400 4300
+Connection ~ 1700 3800
+Wire Wire Line
+	2100 3700 1800 3700
+Wire Wire Line
+	1800 3700 1800 4200
+Wire Wire Line
+	1800 4200 2400 4200
+Wire Wire Line
+	2450 2300 2450 2850
+$Comp
+L VOLTAGE_REGULATOR_321 U2
+U 1 1 54C4ADB0
+P 2450 2000
+F 0 "U2" H 2250 2150 50  0000 C CNN
+F 1 "L78L05AC" H 2475 1850 50  0000 L CNN
+F 2 "Bus_Servo8:TO92_123" H 2450 2050 60  0001 C CNN
+F 3 "" H 2450 2050 60  0000 C CNN
+	1    2450 2000
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1000 6400
+NoConn ~ 1000 6800
+NoConn ~ 1000 7200
+NoConn ~ 1000 7600
+Text Label 1850 3900 0    50   ~ 0
+BPWR
+$Comp
+L R_HORIZ R14
+U 1 1 54C51F5D
+P 9100 2800
+F 0 "R14" H 9100 2900 50  0000 C CNN
+F 1 "470" H 9100 2700 50  0000 C CNN
+F 2 "Bus_Servo8:Resistor_Horizontal_400" H 9125 2800 60  0001 C CNN
+F 3 "" H 9125 2800 60  0000 C CNN
+	1    9100 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_HORIZ R15
+U 1 1 54C52116
+P 9100 3100
+F 0 "R15" H 9100 3200 50  0000 C CNN
+F 1 "470" H 9100 3000 50  0000 C CNN
+F 2 "Bus_Servo8:Resistor_Horizontal_400" H 9125 3100 60  0001 C CNN
+F 3 "" H 9125 3100 60  0000 C CNN
+	1    9100 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_HORIZ R16
+U 1 1 54C5215A
+P 9100 3400
+F 0 "R16" H 9100 3500 50  0000 C CNN
+F 1 "470" H 9100 3300 50  0000 C CNN
+F 2 "Bus_Servo8:Resistor_Horizontal_400" H 9125 3400 60  0001 C CNN
+F 3 "" H 9125 3400 60  0000 C CNN
+	1    9100 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_HORIZ R17
+U 1 1 54C5219F
+P 9100 3700
+F 0 "R17" H 9100 3800 50  0000 C CNN
+F 1 "470" H 9100 3600 50  0000 C CNN
+F 2 "Bus_Servo8:Resistor_Horizontal_400" H 9125 3700 60  0001 C CNN
+F 3 "" H 9125 3700 60  0000 C CNN
+	1    9100 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_HORIZ R9
+U 1 1 54C52467
+P 7600 4400
+F 0 "R9" H 7600 4500 50  0000 C CNN
+F 1 "470" H 7600 4300 50  0000 C CNN
+F 2 "Bus_Servo8:Resistor_Horizontal_400" H 7625 4400 60  0001 C CNN
+F 3 "" H 7625 4400 60  0000 C CNN
+	1    7600 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 2000 5500 2000
+Wire Wire Line
+	6000 1900 5500 1900
+NoConn ~ 7800 1100
+NoConn ~ 7800 1200
+NoConn ~ 7800 1300
+NoConn ~ 7800 1400
+NoConn ~ 6000 1400
+NoConn ~ 6000 2100
+Text Label 1650 1950 0    50   ~ 0
+LPWR
+$EndSCHEMATC
